@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Water | Sports Bar & Grill</title>
+    <meta
+      name="description"
+      content="Sweet Water is a minimalist sports bar experience with pool tables, darts, and a bilingual Latin-inspired menu."
+    />
+    <link rel="stylesheet" href="styles.css?v=4" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Sweet Water home">
+        <picture class="brand-mark">
+          <img src="SW.png" alt="Sweet Water logo" />
+        </picture>
+        <div class="brand-copy">
+          <span class="eyebrow">Sweet Water</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#atmosphere">Slideshow</a>
+        <a href="#menu">Menu</a>
+        <a href="sweetwater_menu_english-1.pdf" target="_blank" rel="noreferrer">English PDF</a>
+        <a href="sweetwater_menu_spanish.pdf" target="_blank" rel="noreferrer">Español PDF</a>
+      </nav>
+    </header>
+
+    <div class="mobile-scenes" aria-label="Quick scene navigation">
+      <button class="mobile-scene-btn is-active" type="button" data-mobile-scene="home">Home</button>
+      <button class="mobile-scene-btn" type="button" data-mobile-scene="atmosphere">Slideshow</button>
+      <button class="mobile-scene-btn" type="button" data-mobile-scene="menu">Menu</button>
+    </div>
+
+    <main class="stage" id="stage">
+      <div class="scene-track" id="scene-track">
+        <section id="home" class="scene scene-home">
+          <div class="hero panel">
+            <div class="hero-copy">
+              <p class="kicker">Upscaled sports bar</p>
+              <h1>Sweetwater &mdash; Great Food. Strong Drinks. Good Times.</h1>
+              <p class="lede">
+                Classic Latin favorites for pool nights, dart games, and easy nights out.
+              </p>
+
+              <div class="hero-actions">
+                <button class="button button-primary" type="button" data-jump="1">View Atmosphere</button>
+                <button class="button button-secondary" type="button" data-jump="2">Jump to Menu</button>
+              </div>
+
+            </div>
+
+            <div class="hero-visual">
+              <img class="hero-logo" src="sweetwater logo.png" alt="Sweet Water logo enlarged" />
+            </div>
+          </div>
+
+          <div class="experience-strip">
+            <article class="feature-card panel">
+              <p class="feature-label">Sports Bar Energy</p>
+              <h3>Catch every play with a drink in hand.</h3>
+            </article>
+            <article class="feature-card panel">
+              <p class="feature-label">Pool Tables</p>
+              <h3>Rack up, kick back, stay awhile.</h3>
+            </article>
+            <article class="feature-card panel">
+              <p class="feature-label">Darts</p>
+              <h3>Aim sharp. Sip smooth. Play all night.</h3>
+            </article>
+          </div>
+        </section>
+
+        <section id="atmosphere" class="scene scene-atmosphere">
+          <div class="section-heading atmosphere-heading">
+            <div>
+              <p class="kicker">Atmosphere</p>
+              <h2>Where the room tells the story.</h2>
+            </div>
+          </div>
+
+          <div class="slideshow panel">
+            <div class="slideshow-stage" aria-live="polite">
+              <div class="slideshow-viewport" id="slideshow-viewport"></div>
+            </div>
+
+            <div class="slideshow-footer">
+              <div>
+                <p class="slideshow-label">Inside Sweet Water</p>
+                <h3 id="slideshow-title">Bar and bottles</h3>
+              </div>
+              <p id="slideshow-copy" class="slideshow-copy">
+                An elevated first impression with warm light and a polished bar.
+              </p>
+            </div>
+
+            <div class="slideshow-dots" id="slideshow-dots" aria-label="Slideshow navigation"></div>
+          </div>
+        </section>
+
+        <section id="menu" class="scene scene-menu">
+          <div class="menu-shell panel">
+            <div class="section-heading menu-heading">
+              <div>
+                <p class="kicker">Menu</p>
+                <h2>Latin flavor, bar favorites, and a menu made for everyone.</h2>
+              </div>
+
+              <div class="menu-controls" role="tablist" aria-label="Menu language toggle">
+                <button class="lang-btn is-active" data-lang="en" type="button" role="tab" aria-selected="true">
+                  English
+                </button>
+                <button class="lang-btn" data-lang="es" type="button" role="tab" aria-selected="false">
+                  Español
+                </button>
+              </div>
+            </div>
+
+            <div class="menu-note">
+              <span>Download:</span>
+              <a href="sweetwater_menu_english-1.pdf" target="_blank" rel="noreferrer">English PDF</a>
+              <a href="sweetwater_menu_spanish.pdf" target="_blank" rel="noreferrer">Spanish PDF</a>
+            </div>
+
+            <div class="menu-scroll">
+              <div id="menu-container" class="menu-grid" aria-live="polite"></div>
+            </div>
+
+            <div class="menu-footer">
+              <a
+                class="button button-secondary menu-review-button"
+                href="https://www.google.com/search?sca_esv=0cefd7cacdd99c8f&authuser=1&sxsrf=ANbL-n7bngav0-BADd23NCqNe7AjbP2ZBA:1780942660490&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qORaiZO24nDwxjddcAXzJTeIqheQZphDC_3FMMeCF4-78Eg2fpkNhh2kt9eIUoCyzxh8f0ZRFY5eVvFF0TByTeBdpdICNGY9kspndj-dsrLL0wUFaSw%3D%3D&q=Sweetwater+lounge+Reviews&sa=X&ved=2ahUKEwjbi5O1oPiUAxVphIkEHdXTMdwQ0bkNegQIJBAF&biw=1852&bih=986&dpr=1#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Leave a Review
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js?v=3"></script>
+  </body>
+</html>

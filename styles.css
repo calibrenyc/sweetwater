@@ -1657,3 +1657,67 @@ body {
     display: none !important;
   }
 }
+
+@media (hover: none) and (pointer: coarse) {
+  html {
+    overflow-y: auto;
+    overscroll-behavior-y: auto;
+  }
+
+  body {
+    overflow-y: auto;
+    overscroll-behavior-y: auto;
+  }
+
+  .topbar {
+    position: sticky !important;
+    top: 0.35rem;
+    left: auto;
+    transform: none !important;
+  }
+
+  .stage {
+    position: relative !important;
+    inset: auto !important;
+    overflow: visible !important;
+    padding-top: 0.7rem !important;
+  }
+
+  .scene-track {
+    position: static !important;
+    height: auto !important;
+  }
+
+  .scene {
+    position: relative !important;
+    inset: auto !important;
+    width: min(100vw - 0.65rem, 1180px) !important;
+    min-height: calc(100svh - 7rem) !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: none !important;
+    overflow: visible !important;
+  }
+
+  .scene-home,
+  .scene-atmosphere,
+  .scene-menu {
+    align-content: start !important;
+    padding-top: 0.35rem !important;
+  }
+
+  .menu-shell {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .menu-scroll {
+    height: auto !important;
+    overflow: visible !important;
+    -webkit-overflow-scrolling: auto;
+    overscroll-behavior: auto;
+    touch-action: auto;
+  }
+}

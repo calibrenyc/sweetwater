@@ -27,8 +27,8 @@ body {
   min-height: 100vh;
   background:
     linear-gradient(rgba(251, 247, 241, 0.93), rgba(251, 247, 241, 0.96)),
-    url("Background2.png") center top / cover fixed no-repeat,
-    url("Background1.png") center top / cover fixed no-repeat,
+    url("assets/backgrounds/Background.jpg") center top / cover fixed no-repeat,
+    url("assets/backgrounds/Background1.png") center top / cover fixed no-repeat,
     linear-gradient(180deg, var(--bg), #fcfbf8 44%, var(--bg-deep));
   color: var(--text);
   font-family: "Inter", "Segoe UI", "Helvetica Neue", system-ui, sans-serif;
@@ -1107,8 +1107,8 @@ body {
   overscroll-behavior-y: none;
   background:
     linear-gradient(rgba(251, 247, 241, 0.92), rgba(251, 247, 241, 0.96)),
-    url("Background2.png") center top / cover fixed no-repeat,
-    url("Background1.png") center top / cover fixed no-repeat,
+    url("assets/backgrounds/Background.jpg") center top / cover fixed no-repeat,
+    url("assets/backgrounds/Background1.png") center top / cover fixed no-repeat,
     linear-gradient(180deg, var(--bg), #fcfbf8 44%, var(--bg-deep));
 }
 

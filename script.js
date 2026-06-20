@@ -121,47 +121,47 @@ const menuData = {
 
 const slideshowData = [
   {
-    src: "slideshow-1.png",
+    src: "assets/slideshow/slideshow-1.png",
     title: "Bar and bottles",
     copy: "The main bar glowing under chandeliers and lined with a full back bar.",
   },
   {
-    src: "slideshow-2.png",
+    src: "assets/slideshow/slideshow-2.png",
     title: "Champagne service",
     copy: "A chilled bottle presented the way a celebration should feel.",
   },
   {
-    src: "slideshow-3.png",
+    src: "assets/slideshow/slideshow-3.png",
     title: "Bottle lineup",
     copy: "Premium rum and whiskey on display in the bottle room.",
   },
   {
-    src: "slideshow-4.png",
+    src: "assets/slideshow/slideshow-4.png",
     title: "Signature cocktail",
     copy: "A bright house drink with a polished bar backdrop.",
   },
   {
-    src: "slideshow-5.png",
+    src: "assets/slideshow/slideshow-5.png",
     title: "Bucket service",
     copy: "Ice-cold Heineken bottles ready for a round with friends.",
   },
   {
-    src: "slideshow-6.png",
+    src: "assets/slideshow/slideshow-6.png",
     title: "Pool tables",
     copy: "Blue felt tables set up for a night of friendly competition.",
   },
   {
-    src: "slideshow-7.png",
+    src: "assets/slideshow/slideshow-7.png",
     title: "Patio nights",
     copy: "String lights and outdoor seating for an easygoing night out.",
   },
   {
-    src: "slideshow-8.png",
+    src: "assets/slideshow/slideshow-8.png",
     title: "Jalea bites",
     copy: "Golden seafood bites plated for a bold, shareable appetizer.",
   },
   {
-    src: "slideshow-9.png",
+    src: "assets/slideshow/slideshow-9.png",
     title: "Ceviche bowl",
     copy: "Fresh ceviche served bright, crisp, and ready to share.",
   },

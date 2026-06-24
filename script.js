@@ -175,6 +175,7 @@ const slideshowCopy = document.getElementById("slideshow-copy");
 const scenes = [...document.querySelectorAll(".scene")];
 const sceneIndexById = new Map(scenes.map((scene, index) => [scene.id, index]));
 const langButtons = [...document.querySelectorAll(".lang-btn")];
+const mobileSceneButtons = [...document.querySelectorAll("[data-mobile-scene]")];
 const navLinks = [...document.querySelectorAll('.nav a[href^="#"]')];
 const jumpButtons = [...document.querySelectorAll("[data-jump]")];
 
@@ -282,6 +283,11 @@ function setActiveScene(index) {
     scene.classList.remove("is-exiting");
     scene.setAttribute("aria-hidden", String(!active));
   });
+  mobileSceneButtons.forEach((button) => {
+    const active = button.dataset.mobileScene === scenes[index]?.id;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
   activeSceneIndex = index;
 }
 
@@ -350,6 +356,15 @@ function bindEvents() {
       const jump = button.dataset.jump;
       if (jump === "1") goToSceneById("atmosphere");
       if (jump === "2") goToSceneById("menu");
+    });
+  });
+
+  mobileSceneButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const targetScene = button.dataset.mobileScene;
+      if (targetScene) {
+        goToSceneById(targetScene);
+      }
     });
   });
 

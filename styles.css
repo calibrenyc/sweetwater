@@ -578,22 +578,18 @@ h3 {
 }
 
 .menu-item-head {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 0.2rem 0.85rem;
+  display: grid;
+  gap: 0.15rem;
 }
 
 .menu-item-title {
   min-width: 0;
-  flex: 1 1 12rem;
   font-weight: 800;
+  line-height: 1.15;
 }
 
 .menu-item-price {
-  flex: 0 1 auto;
-  margin-left: auto;
+  justify-self: end;
   color: var(--gold);
   font-weight: 800;
   white-space: normal;

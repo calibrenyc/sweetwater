@@ -1722,3 +1722,47 @@ body {
     touch-action: auto;
   }
 }
+
+@media (hover: none) and (pointer: coarse) {
+  .mobile-scenes {
+    position: fixed !important;
+    left: 50% !important;
+    bottom: calc(0.7rem + env(safe-area-inset-bottom)) !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.35rem !important;
+    width: min(100vw - 1rem, 1180px) !important;
+    padding: 0.4rem !important;
+    border-radius: 999px !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid rgba(111, 98, 86, 0.12) !important;
+    box-shadow: 0 8px 20px rgba(47, 36, 26, 0.08) !important;
+    backdrop-filter: blur(12px) !important;
+    transform: translateX(-50%) !important;
+    z-index: 40 !important;
+  }
+
+  .mobile-scene-btn {
+    appearance: none;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    padding: 0.6rem 0.95rem;
+    min-height: 44px;
+    background: transparent;
+    color: var(--muted);
+    font: inherit;
+    font-size: 0.78rem;
+    font-weight: 700;
+    touch-action: manipulation;
+  }
+
+  .mobile-scene-btn.is-active {
+    background: var(--text);
+    color: #fffaf3;
+  }
+
+  .scene {
+    padding-bottom: calc(env(safe-area-inset-bottom) + 5.5rem) !important;
+  }
+}

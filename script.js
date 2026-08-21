@@ -111,7 +111,7 @@ const menuData = {
         { title: "Tacos de Res (3)", price: "$15", description: "tres tacos de res con toppings de la casa" },
         { title: "Lomo Saltado", price: "Pollo $17 / Res $23", description: "salteado peruano con cebollas, tomates, papas fritas y sazon de la casa" },
         { title: "Ensalada Mixta de Mariscos", price: "$25", description: "ensalada fresca de mariscos mixtos con sazon de la casa y un toque citrico" },
-        { title: "Plato de Mariscos Fritos", price: "$30", description: "plato de mariscos fritos crujientes servido dorado y lleno de sabor" },
+        { title: "Chicharrón de Pescado con Camarones", price: "$30", description: "plato de mariscos fritos crujientes servido dorado y lleno de sabor" },
         { title: "Chicharrón de Cerdo", price: "$20", description: "chicharrón de cerdo al estilo dominicano, bien crujiente y dorado" },
         { title: "Wrap Sweetwater", price: "$14", description: "wrap de pollo a la parrilla con lechuga, tomate y salsa de la casa" },
       ],

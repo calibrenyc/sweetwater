@@ -300,8 +300,8 @@ const slideshowData = [
   },
   {
     src: "assets/slideshow/slideshow-8.png",
-    title: "Jalea bites",
-    copy: "Golden seafood bites plated for a bold, shareable appetizer.",
+    title: "Mofonguitos",
+    copy: "Mini mashed plantain cups filled with your choice of protein.",
   },
   {
     src: "assets/slideshow/slideshow-9.png",

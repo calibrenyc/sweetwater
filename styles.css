@@ -1665,15 +1665,17 @@ body {
   }
 }
 
-@media (hover: none) and (pointer: coarse) {
+@media (max-width: 640px) {
   html {
     overflow-y: auto;
     overscroll-behavior-y: auto;
+    touch-action: pan-y;
   }
 
   body {
     overflow-y: auto;
     overscroll-behavior-y: auto;
+    touch-action: pan-y;
   }
 
   .topbar {

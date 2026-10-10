@@ -455,7 +455,7 @@ function goToScene(index) {
 function goToSceneById(id) {
   const index = sceneIndexById.get(id);
   if (typeof index === "number") {
-    if (window.matchMedia("(hover: none) and (pointer: coarse)").matches) {
+    if (window.matchMedia("(max-width: 640px)").matches) {
       scenes[index].scrollIntoView({ behavior: "smooth", block: "start" });
       return;
     }

@@ -169,8 +169,8 @@ const currentMenuData = {
       { title: "Grilled Mixed Seafood", price: "$25", description: "mixed grilled seafood served with your choice of sides" },
       { title: "Small Jalea", price: "$26", description: "fried seafood platter with fish, calamari, shrimp, and marinated seafood" },
       { title: "Family Jalea", price: "$40", description: "large fried seafood platter for sharing" },
-      { title: "Chicharrón de Calamar", price: "$16", description: "fried calamari chicharrón served golden and crisp" },
-      { title: "Chicharrón de Camarón", price: "$25", description: "fried shrimp chicharrón served golden and crisp" },
+      { title: "Crispy Fried Calamari", price: "$16", description: "fried calamari served golden and crisp" },
+      { title: "Crispy Fried Shrimp", price: "$25", description: "fried shrimp served golden and crisp" },
     ] },
     { title: "Tacos & Sandwiches", items: [
       { title: "Chicken Tacos (3)", price: "$13", description: "three chicken tacos with house toppings" },

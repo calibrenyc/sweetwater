@@ -311,6 +311,7 @@ const slideshowData = [
 ];
 
 const menuContainer = document.getElementById("menu-container");
+const slideshow = document.querySelector(".slideshow");
 const slideshowViewport = document.getElementById("slideshow-viewport");
 const slideshowDots = document.getElementById("slideshow-dots");
 const slideshowTitle = document.getElementById("slideshow-title");
@@ -387,6 +388,8 @@ function renderSlideshow() {
 
   slideshowDots.querySelectorAll("[data-slide-dot]").forEach((dot) => {
     dot.addEventListener("click", () => setSlide(Number(dot.dataset.slideDot)));
+    dot.addEventListener("pointerenter", () => setSlide(Number(dot.dataset.slideDot)));
+    dot.addEventListener("focus", () => setSlide(Number(dot.dataset.slideDot)));
   });
 
   updateSlideContent();
@@ -416,6 +419,12 @@ function startSlideTimer() {
     window.clearInterval(slideTimer);
   }
   slideTimer = window.setInterval(nextSlide, 4800);
+}
+
+function stopSlideTimer() {
+  if (!slideTimer) return;
+  window.clearInterval(slideTimer);
+  slideTimer = null;
 }
 
 function setActiveScene(index) {
@@ -479,6 +488,13 @@ function canScrollMenu(direction) {
 }
 
 function bindEvents() {
+  slideshow.addEventListener("pointerenter", stopSlideTimer);
+  slideshow.addEventListener("pointerleave", startSlideTimer);
+  slideshow.addEventListener("focusin", stopSlideTimer);
+  slideshow.addEventListener("focusout", (event) => {
+    if (!slideshow.contains(event.relatedTarget)) startSlideTimer();
+  });
+
   langButtons.forEach((button) => {
     button.addEventListener("click", () => setLanguage(button.dataset.lang));
   });

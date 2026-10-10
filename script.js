@@ -455,6 +455,10 @@ function goToScene(index) {
 function goToSceneById(id) {
   const index = sceneIndexById.get(id);
   if (typeof index === "number") {
+    if (window.matchMedia("(hover: none) and (pointer: coarse)").matches) {
+      scenes[index].scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
     goToScene(index);
   }
 }

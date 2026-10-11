@@ -158,6 +158,10 @@ const currentMenuData = {
     { title: "Seafood", isFull: true, items: [
       { title: "Mixed Seafood Salad", price: "$25", description: "mixed seafood salad with house seasoning and fresh vegetables" },
       { title: "Rice with Seafood", price: "$25", description: "seasoned rice mixed with seafood and house flavors" },
+      { title: "Fish Ceviche", price: "$22", description: "fresh fish cured in lime juice with red onion, cilantro, and house seasoning" },
+      { title: "Mixed Seafood Ceviche", price: "$25", description: "mixed seafood cured in lime juice with red onion, cilantro, and house seasoning" },
+      { title: "Shrimp Ceviche", price: "$25", description: "shrimp marinated in lime juice with red onion, cilantro, and house seasoning" },
+      { title: "Octopus Ceviche", price: "$25", description: "octopus marinated in lime juice with red onion, cilantro, and house seasoning" },
       { title: "Spicy Shrimp (10)", price: "$25", description: "shrimp in spicy house sauce, served with sides" },
       { title: "Spicy Shrimp Sauce", price: "$30", description: "shrimp in spicy shrimp sauce, served with sides" },
       { title: "Spicy Seafood", price: "$25", description: "mixed seafood in spicy house sauce" },
@@ -229,6 +233,10 @@ const currentMenuData = {
     { title: "Mariscos", isFull: true, items: [
       { title: "Ensalada Mixta de Mariscos", price: "$25", description: "ensalada mixta de mariscos con sazón de la casa y vegetales frescos" },
       { title: "Arroz con Mariscos", price: "$25", description: "arroz sazonado con mariscos y sabores de la casa" },
+      { title: "Ceviche de Pescado", price: "$22", description: "pescado fresco marinado en limón con cebolla morada, cilantro y sazón de la casa" },
+      { title: "Ceviche Mixto", price: "$25", description: "mariscos mixtos marinados en limón con cebolla morada, cilantro y sazón de la casa" },
+      { title: "Ceviche de Camarones", price: "$25", description: "camarones marinados en limón con cebolla morada, cilantro y sazón de la casa" },
+      { title: "Ceviche de Pulpo", price: "$25", description: "pulpo marinado en limón con cebolla morada, cilantro y sazón de la casa" },
       { title: "Picante de Camarones (10)", price: "$25", description: "camarones en salsa picante de la casa, servido con acompañantes" },
       { title: "Picante de Salsa de Camarón", price: "$30", description: "camarones en salsa picante de camarón, servido con acompañantes" },
       { title: "Picante de Mariscos", price: "$25", description: "mariscos mixtos en salsa picante de la casa" },
